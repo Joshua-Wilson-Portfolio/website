@@ -5,55 +5,40 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   <style>
-    /* New background colors for tiles */
-    .tiles article:nth-child(1) { background-color: #4A90E2; } /* About Me - Soft Blue */
-    .tiles article:nth-child(2) { background-color: #50E3C2; } /* Python - Aqua */
-    .tiles article:nth-child(3) { background-color: #F5A623; } /* SQL - Orange */
-    .tiles article:nth-child(4) { background-color: #B8E986; } /* R - Light Green */
-    .tiles article:nth-child(5) { background-color: #7B61FF; } /* Tableau - Purple */
-    .tiles article:nth-child(6) { background-color: #FF6F61; } /* Power BI - Coral */
-    .tiles article:nth-child(7) { background-color: #9B9B9B; } /* Excel - Gray */
+    /* === Custom Tile Colors === */
+    .tile-about    { background-color: #5D9CEC; }
+    .tile-python   { background-color: #EC644B; }
+    .tile-sql      { background-color: #FF9F43; }
+    .tile-r        { background-color: #58D68D; }
+    .tile-tableau  { background-color: #A569BD; }
+    .tile-powerbi  { background-color: #F7DC6F; color: #000 !important; }
+    .tile-excel    { background-color: #48C9B0; }
 
-    /* Keep white headers and text */
-    .tiles article header.major h3 a,
-    .tiles article header.major p {
-      color: white !important;
-    }
+    .tile-about:hover    { background-color: #4178C0; }
+    .tile-python:hover   { background-color: #C44C37; }
+    .tile-sql:hover      { background-color: #CC7F35; }
+    .tile-r:hover        { background-color: #3BA86D; }
+    .tile-tableau:hover  { background-color: #7D3C98; }
+    .tile-powerbi:hover  { background-color: #D4B641; color: #000 !important; }
+    .tile-excel:hover    { background-color: #349B86; }
 
-    /* Remove dark overlay on hover */
-    .tiles article:hover {
-      transform: scale(1.03);
-      transition: transform 0.3s ease;
-      filter: brightness(1.05);
-    }
-
-    /* Change banner background */
+    /* Override for banner background */
     #banner.major {
-      background-color: #0B3D91 !important; /* Deep professional blue */
+      background: linear-gradient(to right, #2C3E50, #4CA1AF);
     }
 
-    /* Fix quick links visibility */
-    .quick-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
-    .quick-links a {
+    /* Remove default green text */
+    body, h1, h2, h3, h4, h5, p, a {
       color: white;
-      text-decoration: none;
-      background: rgba(255, 255, 255, 0.1);
-      padding: 0.4rem 0.8rem;
-      border-radius: 4px;
     }
-    .quick-links a:hover {
-      background: rgba(255, 255, 255, 0.2);
+
+    /* Ensure footer and header remain visible with new theme */
+    #footer, #header {
+      background-color: #111;
     }
   </style>
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 <body class="is-preload">
 
@@ -65,19 +50,6 @@
     <a href="index.html" class="logo"><strong>Data Analyst Portfolio</strong> <span>by Joshua Wilson</span></a>
     <nav><a href="#menu">Menu</a></nav>
   </header>
-
-  <!-- Top Quick Links -->
-  <div class="quick-links">
-    <a href="index.html">Home</a>
-    <a href="aboutme.html">About Me</a>
-    <a href="python.html">Python</a>
-    <a href="sql.html">SQL</a>
-    <a href="r.html">R</a>
-    <a href="tableau.html">Tableau</a>
-    <a href="powerbi.html">Power BI</a>
-    <a href="excel.html">Excel</a>
-    <a href="contact.html">Contact</a>
-  </div>
 
   <!-- Menu -->
   <nav id="menu">
@@ -116,71 +88,77 @@
 
   <!-- Main -->
   <div id="main">
-    <!-- Tiles -->
     <section id="one" class="tiles">
-      <article>
-        <span class="image"><img src="images/about.jpg" alt="" /></span>
+      <article class="tile-about">
+        <span class="image">
+          <img src="images/about.jpg" alt="" />
+        </span>
         <header class="major">
           <h3><a href="aboutme.html" class="link">About Me</a></h3>
           <p>Background, skills, and journey into data analytics</p>
         </header>
       </article>
-      <article>
-        <span class="image"><img src="images/pic01.jpg" alt="" /></span>
+
+      <article class="tile-python">
+        <span class="image">
+          <img src="images/pic01.jpg" alt="" />
+        </span>
         <header class="major">
           <h3><a href="python.html" class="link">Python</a></h3>
           <p>Sales analysis project using pandas, seaborn & matplotlib</p>
         </header>
       </article>
-      <article>
-        <span class="image"><img src="images/pic03.jpg" alt="" /></span>
+
+      <article class="tile-sql">
+        <span class="image">
+          <img src="images/pic03.jpg" alt="" />
+        </span>
         <header class="major">
           <h3><a href="sql.html" class="link">SQL</a></h3>
           <p>Spotify data cleaning, transformation & revenue analysis</p>
         </header>
       </article>
-      <article>
-        <span class="image"><img src="images/pic02.jpg" alt="" /></span>
+
+      <article class="tile-r">
+        <span class="image">
+          <img src="images/pic02.jpg" alt="" />
+        </span>
         <header class="major">
           <h3><a href="r.html" class="link">R</a></h3>
           <p>Exploring data and visualising insights using ggplot2 & tidyverse</p>
         </header>
       </article>
-      <article>
-        <span class="image"><img src="images/pic05.jpg" alt="" /></span>
+
+      <article class="tile-tableau">
+        <span class="image">
+          <img src="images/pic05.jpg" alt="" />
+        </span>
         <header class="major">
           <h3><a href="tableau.html" class="link">Tableau</a></h3>
           <p>Interactive dashboards for sales & call centre performance</p>
         </header>
       </article>
-      <article>
-        <span class="image"><img src="images/pic06.jpg" alt="" /></span>
+
+      <article class="tile-powerbi">
+        <span class="image">
+          <img src="images/pic06.jpg" alt="" />
+        </span>
         <header class="major">
           <h3><a href="powerbi.html" class="link">Power BI</a></h3>
           <p>PPI Claims dashboard using Snowflake SQL pipelines</p>
         </header>
       </article>
-      <article>
-        <span class="image"><img src="images/pic04.jpg" alt="" /></span>
+
+      <article class="tile-excel">
+        <span class="image">
+          <img src="images/pic04.jpg" alt="" />
+        </span>
         <header class="major">
           <h3><a href="excel.html" class="link">Excel</a></h3>
           <p>Excel-based KPI dashboards and performance summaries</p>
         </header>
       </article>
     </section>
-  </div>
-
-  <!-- Footer Quick Links -->
-  <div class="quick-links">
-    <a href="index.html">Home</a>
-    <a href="aboutme.html">About Me</a>
-    <a href="python.html">Python</a>
-    <a href="sql.html">SQL</a>
-    <a href="r.html">R</a>
-    <a href="tableau.html">Tableau</a>
-    <a href="powerbi.html">Power BI</a>
-    <a href="excel.html">Excel</a>
-    <a href="contact.html">Contact</a>
   </div>
 
   <!-- Footer -->
