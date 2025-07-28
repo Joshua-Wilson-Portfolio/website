@@ -6,65 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-  
-  <!-- Custom Style Overrides -->
+
+  <!-- Specific Color Customization -->
   <style>
-    body {
-      background-color: #121212;
-      color: #ffffff;
+    /* Top header bar background */
+    #header {
+      background-color: #2c3e50; /* Professional dark slate */
     }
 
-    a, a:visited {
-      color: #2ecc71;
-    }
-
-    a:hover {
-      color: #27ae60;
-    }
-
-    .logo strong, .logo span {
-      color: #ffffff;
-    }
-
-    #header, #footer {
-      background-color: #181818;
-    }
-
+    /* Tile background color */
     .tiles article {
-      background-color: #1f1f1f;
+      background-color: #3d3d3d; /* Neutral grey, clean look */
+      color: white;
       border-radius: 10px;
       overflow: hidden;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    }
-
-    .tiles article .image img {
-      opacity: 0.9;
     }
 
     .tiles article:hover {
-      background-color: #2ecc71;
-      color: #ffffff;
+      background-color: #555;
     }
 
-    .button {
-      background-color: #2ecc71;
-      color: #ffffff;
+    /* Remove green link text */
+    a, a:visited {
+      color: white;
     }
 
-    .button:hover {
-      background-color: #27ae60;
+    a:hover {
+      color: #dddddd;
     }
 
-    #banner {
-      background-color: #1f1f1f;
-    }
-
-    .major h1, .major h2, .major h3 {
-      color: #ffffff;
-    }
-
-    .contact-method span {
-      color: #2ecc71;
+    /* Ensure menu text is white */
+    .dropbtn, .dropup-content a {
+      color: white !important;
     }
   </style>
 </head>
