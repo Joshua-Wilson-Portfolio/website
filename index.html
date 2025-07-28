@@ -5,64 +5,55 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   <style>
-    body {
-      color: white;
+    /* New background colors for tiles */
+    .tiles article:nth-child(1) { background-color: #4A90E2; } /* About Me - Soft Blue */
+    .tiles article:nth-child(2) { background-color: #50E3C2; } /* Python - Aqua */
+    .tiles article:nth-child(3) { background-color: #F5A623; } /* SQL - Orange */
+    .tiles article:nth-child(4) { background-color: #B8E986; } /* R - Light Green */
+    .tiles article:nth-child(5) { background-color: #7B61FF; } /* Tableau - Purple */
+    .tiles article:nth-child(6) { background-color: #FF6F61; } /* Power BI - Coral */
+    .tiles article:nth-child(7) { background-color: #9B9B9B; } /* Excel - Gray */
+
+    /* Keep white headers and text */
+    .tiles article header.major h3 a,
+    .tiles article header.major p {
+      color: white !important;
     }
 
-    /* Header bar */
-    #header {
-      background-color: #2c3e50;
+    /* Remove dark overlay on hover */
+    .tiles article:hover {
+      transform: scale(1.03);
+      transition: transform 0.3s ease;
+      filter: brightness(1.05);
     }
 
-    /* Quick Links */
+    /* Change banner background */
+    #banner.major {
+      background-color: #0B3D91 !important; /* Deep professional blue */
+    }
+
+    /* Fix quick links visibility */
     .quick-links {
       display: flex;
       flex-wrap: wrap;
+      gap: 10px;
       justify-content: center;
-      background: #2c3e50;
-      padding: 10px;
-      gap: 15px;
+      padding: 1rem;
+      font-size: 0.9rem;
     }
-
     .quick-links a {
       color: white;
       text-decoration: none;
-      font-weight: bold;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
     }
-
     .quick-links a:hover {
-      text-decoration: underline;
-    }
-
-    /* Tiles */
-    .tiles article {
-      background-color: #333;
-      color: white;
-      border-radius: 10px;
-      box-shadow: 0 0 0 transparent;
-      transition: transform 0.3s ease;
-    }
-
-    .tiles article:hover {
-      transform: scale(1.02);
-    }
-
-    /* Tile header custom colors */
-    .tiles article:nth-child(1) h3 a { color: #7f8c8d; }   /* About Me */
-    .tiles article:nth-child(2) h3 a { color: #3498db; }   /* Python */
-    .tiles article:nth-child(3) h3 a { color: #f39c12; }   /* SQL */
-    .tiles article:nth-child(4) h3 a { color: #9b59b6; }   /* R */
-    .tiles article:nth-child(5) h3 a { color: #16a085; }   /* Tableau */
-    .tiles article:nth-child(6) h3 a { color: #e67e22; }   /* Power BI */
-    .tiles article:nth-child(7) h3 a { color: #27ae60; }   /* Excel */
-
-    /* Banner background */
-    #banner.major {
-      background-color: #1abc9c !important;
+      background: rgba(255, 255, 255, 0.2);
     }
   </style>
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 <body class="is-preload">
 
@@ -72,12 +63,10 @@
   <!-- Header -->
   <header id="header" class="alt">
     <a href="index.html" class="logo"><strong>Data Analyst Portfolio</strong> <span>by Joshua Wilson</span></a>
-    <nav>
-      <a href="#menu">Menu</a>
-    </nav>
+    <nav><a href="#menu">Menu</a></nav>
   </header>
 
-  <!-- Quick Links (Top) -->
+  <!-- Top Quick Links -->
   <div class="quick-links">
     <a href="index.html">Home</a>
     <a href="aboutme.html">About Me</a>
@@ -127,7 +116,7 @@
 
   <!-- Main -->
   <div id="main">
-    <!-- Tiles Section -->
+    <!-- Tiles -->
     <section id="one" class="tiles">
       <article>
         <span class="image"><img src="images/about.jpg" alt="" /></span>
@@ -136,7 +125,6 @@
           <p>Background, skills, and journey into data analytics</p>
         </header>
       </article>
-
       <article>
         <span class="image"><img src="images/pic01.jpg" alt="" /></span>
         <header class="major">
@@ -144,7 +132,6 @@
           <p>Sales analysis project using pandas, seaborn & matplotlib</p>
         </header>
       </article>
-
       <article>
         <span class="image"><img src="images/pic03.jpg" alt="" /></span>
         <header class="major">
@@ -152,7 +139,6 @@
           <p>Spotify data cleaning, transformation & revenue analysis</p>
         </header>
       </article>
-
       <article>
         <span class="image"><img src="images/pic02.jpg" alt="" /></span>
         <header class="major">
@@ -160,7 +146,6 @@
           <p>Exploring data and visualising insights using ggplot2 & tidyverse</p>
         </header>
       </article>
-
       <article>
         <span class="image"><img src="images/pic05.jpg" alt="" /></span>
         <header class="major">
@@ -168,7 +153,6 @@
           <p>Interactive dashboards for sales & call centre performance</p>
         </header>
       </article>
-
       <article>
         <span class="image"><img src="images/pic06.jpg" alt="" /></span>
         <header class="major">
@@ -176,7 +160,6 @@
           <p>PPI Claims dashboard using Snowflake SQL pipelines</p>
         </header>
       </article>
-
       <article>
         <span class="image"><img src="images/pic04.jpg" alt="" /></span>
         <header class="major">
@@ -187,7 +170,7 @@
     </section>
   </div>
 
-  <!-- Quick Links (Bottom) -->
+  <!-- Footer Quick Links -->
   <div class="quick-links">
     <a href="index.html">Home</a>
     <a href="aboutme.html">About Me</a>
