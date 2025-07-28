@@ -1,203 +1,209 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-  <title>Joshua Wilson Data Analyst Portfolio</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-  <style>
-    /* === Custom Tile Colors === */
-    .tile-about    { background-color: #5D9CEC; }
-    .tile-python   { background-color: #EC644B; }
-    .tile-sql      { background-color: #FF9F43; }
-    .tile-r        { background-color: #58D68D; }
-    .tile-tableau  { background-color: #A569BD; }
-    .tile-powerbi  { background-color: #F7DC6F; color: #000 !important; }
-    .tile-excel    { background-color: #48C9B0; }
+  <head>
+    <title>Joshua Wilson Data Analyst Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-    .tile-about:hover    { background-color: #4178C0; }
-    .tile-python:hover   { background-color: #C44C37; }
-    .tile-sql:hover      { background-color: #CC7F35; }
-    .tile-r:hover        { background-color: #3BA86D; }
-    .tile-tableau:hover  { background-color: #7D3C98; }
-    .tile-powerbi:hover  { background-color: #D4B641; color: #000 !important; }
-    .tile-excel:hover    { background-color: #349B86; }
+    <style>
+      /* --- TILE BACKGROUND COLORS --- */
+      section.tiles article:nth-child(1) { background-color: #5DADE2; }  /* About Me */
+      section.tiles article:nth-child(2) { background-color: #AF7AC5; }  /* Python */
+      section.tiles article:nth-child(3) { background-color: #F39C12; }  /* SQL */
+      section.tiles article:nth-child(4) { background-color: #58D68D; }  /* R */
+      section.tiles article:nth-child(5) { background-color: #48C9B0; }  /* Tableau */
+      section.tiles article:nth-child(6) { background-color: #F4D03F; color: black; }  /* Power BI */
+      section.tiles article:nth-child(7) { background-color: #E67E22; }  /* Excel */
 
-    /* Override for banner background */
-    #banner.major {
-      background: linear-gradient(to right, #2C3E50, #4CA1AF);
-    }
+      section.tiles article:nth-child(1):hover { background-color: #3498DB; }
+      section.tiles article:nth-child(2):hover { background-color: #884EA0; }
+      section.tiles article:nth-child(3):hover { background-color: #D68910; }
+      section.tiles article:nth-child(4):hover { background-color: #45B39D; }
+      section.tiles article:nth-child(5):hover { background-color: #1ABC9C; }
+      section.tiles article:nth-child(6):hover { background-color: #D4AC0D; color: black; }
+      section.tiles article:nth-child(7):hover { background-color: #CA6F1E; }
 
-    /* Remove default green text */
-    body, h1, h2, h3, h4, h5, p, a {
-      color: white;
-    }
+      /* --- BANNER BACKGROUND --- */
+      #banner.major {
+        background: linear-gradient(to right, #2C3E50, #4CA1AF);
+      }
 
-    /* Ensure footer and header remain visible with new theme */
-    #footer, #header {
-      background-color: #111;
-    }
-  </style>
-</head>
-<body class="is-preload">
+      /* --- Force white text everywhere except Power BI tile --- */
+      body, h1, h2, h3, h4, h5, h6, p, a {
+        color: white;
+      }
+      section.tiles article:nth-child(6) h3,
+      section.tiles article:nth-child(6) p,
+      section.tiles article:nth-child(6) a {
+        color: black !important;
+      }
 
-<!-- Wrapper -->
-<div id="wrapper">
+      /* --- Header / Footer background --- */
+      #header, #footer {
+        background-color: #111;
+      }
+    </style>
+  </head>
+  <body class="is-preload">
 
-  <!-- Header -->
-  <header id="header" class="alt">
-    <a href="index.html" class="logo"><strong>Data Analyst Portfolio</strong> <span>by Joshua Wilson</span></a>
-    <nav><a href="#menu">Menu</a></nav>
-  </header>
+    <!-- Wrapper -->
+    <div id="wrapper">
 
-  <!-- Menu -->
-  <nav id="menu">
-    <ul class="links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="aboutme.html">About Me</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <div class="dropup">
-        <button class="dropbtn">Portfolio Projects</button>
-        <div class="dropup-content">
-          <a href="python.html">Python</a>
-          <a href="sql.html">SQL</a>
-          <a href="r.html">R</a>
-          <a href="tableau.html">Tableau</a>
-          <a href="powerbi.html">Power BI</a>
-          <a href="excel.html">Excel</a>
-        </div>
-      </div>
-    </ul>
-  </nav>
-
-  <!-- Banner -->
-  <section id="banner" class="major">
-    <div class="inner">
-      <header class="major">
-        <h1>Hi, I'm Joshua Wilson</h1>
+      <!-- Header -->
+      <header id="header" class="alt">
+        <a href="index.html" class="logo"><strong>Data Analyst Portfolio</strong> <span>by Joshua Wilson</span></a>
+        <nav><a href="#menu">Menu</a></nav>
       </header>
-      <div class="content">
-        <p>Welcome to my Data Analyst Portfolio!<br>Explore my Python, SQL, Power BI, Tableau, and Excel projects.</p>
-        <ul class="actions">
-          <li><a href="aboutme.html" class="button">About Me</a></li>
+
+      <!-- Menu -->
+      <nav id="menu">
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutme.html">About Me</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <div class="dropup">
+            <button class="dropbtn">Portfolio Projects</button>
+            <div class="dropup-content">
+              <a href="python.html">Python</a>
+              <a href="sql.html">SQL</a>
+              <a href="r.html">R</a>
+              <a href="tableau.html">Tableau</a>
+              <a href="powerbi.html">Power BI</a>
+              <a href="excel.html">Excel</a>
+            </div>
+          </div>
         </ul>
+      </nav>
+
+      <!-- Banner -->
+      <section id="banner" class="major">
+        <div class="inner">
+          <header class="major">
+            <h1>Hi, I'm Joshua Wilson</h1>
+          </header>
+          <div class="content">
+            <p>Welcome to my Data Analyst Portfolio!<br>Explore my Python, SQL, Power BI, Tableau, and Excel projects.</p>
+            <ul class="actions">
+              <li><a href="aboutme.html" class="button">About Me</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main -->
+      <div id="main">
+        <section id="one" class="tiles">
+          <article>
+            <span class="image">
+              <img src="images/about.jpg" alt="" />
+            </span>
+            <header class="major">
+              <h3><a href="aboutme.html" class="link">About Me</a></h3>
+              <p>Background, skills, and journey into data analytics</p>
+            </header>
+          </article>
+
+          <article>
+            <span class="image">
+              <img src="images/pic01.jpg" alt="" />
+            </span>
+            <header class="major">
+              <h3><a href="python.html" class="link">Python</a></h3>
+              <p>Sales analysis project using pandas, seaborn & matplotlib</p>
+            </header>
+          </article>
+
+          <article>
+            <span class="image">
+              <img src="images/pic03.jpg" alt="" />
+            </span>
+            <header class="major">
+              <h3><a href="sql.html" class="link">SQL</a></h3>
+              <p>Spotify data cleaning, transformation & revenue analysis</p>
+            </header>
+          </article>
+
+          <article>
+            <span class="image">
+              <img src="images/pic02.jpg" alt="" />
+            </span>
+            <header class="major">
+              <h3><a href="r.html" class="link">R</a></h3>
+              <p>Exploring data and visualising insights using ggplot2 & tidyverse</p>
+            </header>
+          </article>
+
+          <article>
+            <span class="image">
+              <img src="images/pic05.jpg" alt="" />
+            </span>
+            <header class="major">
+              <h3><a href="tableau.html" class="link">Tableau</a></h3>
+              <p>Interactive dashboards for sales & call centre performance</p>
+            </header>
+          </article>
+
+          <article>
+            <span class="image">
+              <img src="images/pic06.jpg" alt="" />
+            </span>
+            <header class="major">
+              <h3><a href="powerbi.html" class="link">Power BI</a></h3>
+              <p>PPI Claims dashboard using Snowflake SQL pipelines</p>
+            </header>
+          </article>
+
+          <article>
+            <span class="image">
+              <img src="images/pic04.jpg" alt="" />
+            </span>
+            <header class="major">
+              <h3><a href="excel.html" class="link">Excel</a></h3>
+              <p>Excel-based KPI dashboards and performance summaries</p>
+            </header>
+          </article>
+        </section>
       </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <section class="split">
+          <section>
+            <div class="contact-method">
+              <span class="icon solid alt fa-envelope"></span>
+              <h3>Email</h3>
+              <a href="mailto:joshuawilson2025@hotmail.com">joshuawilson2025@hotmail.com</a>
+            </div>
+          </section>
+          <section>
+            <div class="contact-method">
+              <span class="icon brands alt fa-github"></span>
+              <h3>GitHub</h3>
+              <a href="https://github.com/Joshua-Wilson-Portfolio" target="_blank">Joshua-Wilson-Portfolio</a>
+            </div>
+          </section>
+          <section>
+            <div class="contact-method">
+              <span class="icon brands alt fa-linkedin-in"></span>
+              <h3>LinkedIn</h3>
+              <a href="https://www.linkedin.com/in/joshua-wilson" target="_blank">Joshua Wilson</a>
+            </div>
+          </section>
+        </section>
+      </footer>
+
     </div>
-  </section>
 
-  <!-- Main -->
-  <div id="main">
-    <section id="one" class="tiles">
-      <article class="tile-about">
-        <span class="image">
-          <img src="images/about.jpg" alt="" />
-        </span>
-        <header class="major">
-          <h3><a href="aboutme.html" class="link">About Me</a></h3>
-          <p>Background, skills, and journey into data analytics</p>
-        </header>
-      </article>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
-      <article class="tile-python">
-        <span class="image">
-          <img src="images/pic01.jpg" alt="" />
-        </span>
-        <header class="major">
-          <h3><a href="python.html" class="link">Python</a></h3>
-          <p>Sales analysis project using pandas, seaborn & matplotlib</p>
-        </header>
-      </article>
-
-      <article class="tile-sql">
-        <span class="image">
-          <img src="images/pic03.jpg" alt="" />
-        </span>
-        <header class="major">
-          <h3><a href="sql.html" class="link">SQL</a></h3>
-          <p>Spotify data cleaning, transformation & revenue analysis</p>
-        </header>
-      </article>
-
-      <article class="tile-r">
-        <span class="image">
-          <img src="images/pic02.jpg" alt="" />
-        </span>
-        <header class="major">
-          <h3><a href="r.html" class="link">R</a></h3>
-          <p>Exploring data and visualising insights using ggplot2 & tidyverse</p>
-        </header>
-      </article>
-
-      <article class="tile-tableau">
-        <span class="image">
-          <img src="images/pic05.jpg" alt="" />
-        </span>
-        <header class="major">
-          <h3><a href="tableau.html" class="link">Tableau</a></h3>
-          <p>Interactive dashboards for sales & call centre performance</p>
-        </header>
-      </article>
-
-      <article class="tile-powerbi">
-        <span class="image">
-          <img src="images/pic06.jpg" alt="" />
-        </span>
-        <header class="major">
-          <h3><a href="powerbi.html" class="link">Power BI</a></h3>
-          <p>PPI Claims dashboard using Snowflake SQL pipelines</p>
-        </header>
-      </article>
-
-      <article class="tile-excel">
-        <span class="image">
-          <img src="images/pic04.jpg" alt="" />
-        </span>
-        <header class="major">
-          <h3><a href="excel.html" class="link">Excel</a></h3>
-          <p>Excel-based KPI dashboards and performance summaries</p>
-        </header>
-      </article>
-    </section>
-  </div>
-
-  <!-- Footer -->
-  <footer id="footer">
-    <section class="split">
-      <section>
-        <div class="contact-method">
-          <span class="icon solid alt fa-envelope"></span>
-          <h3>Email</h3>
-          <a href="mailto:joshuawilson2025@hotmail.com">joshuawilson2025@hotmail.com</a>
-        </div>
-      </section>
-      <section>
-        <div class="contact-method">
-          <span class="icon brands alt fa-github"></span>
-          <h3>GitHub</h3>
-          <a href="https://github.com/Joshua-Wilson-Portfolio" target="_blank">Joshua-Wilson-Portfolio</a>
-        </div>
-      </section>
-      <section>
-        <div class="contact-method">
-          <span class="icon brands alt fa-linkedin-in"></span>
-          <h3>LinkedIn</h3>
-          <a href="https://www.linkedin.com/in/joshua-wilson" target="_blank">Joshua Wilson</a>
-        </div>
-      </section>
-    </section>
-  </footer>
-
-</div>
-
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-
-</body>
+  </body>
 </html>
