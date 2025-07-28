@@ -7,21 +7,37 @@
   <link rel="stylesheet" href="assets/css/main.css" />
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   <style>
-    .quick-links-header {
+    .quick-links-bar {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 1rem;
-      margin-top: 0.5rem;
-      font-size: 0.9rem;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      padding-top: 0.5rem;
     }
-    .quick-links-header a {
-      color: white;
+
+    .quick-links-bar a {
+      font-size: 0.85rem;
       text-decoration: none;
-      border-bottom: 1px solid transparent;
+      font-weight: bold;
+      color: white;
+      border: 1px solid white;
+      padding: 4px 10px;
+      border-radius: 4px;
+      transition: background 0.3s ease;
     }
-    .quick-links-header a:hover {
-      border-bottom: 1px solid white;
+
+    .quick-links-bar a:hover {
+      background: white;
+      color: #111;
+    }
+
+    @media (max-width: 768px) {
+      .quick-links-bar {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.5rem 0;
+      }
     }
   </style>
 </head>
@@ -32,20 +48,20 @@
 
   <!-- Header -->
   <header id="header" class="alt">
-    <a href="index.html" class="logo"><strong>Data Analyst Portfolio</strong> <span>by Joshua Wilson</span></a>
-    <nav>
-      <a href="#menu">Menu</a>
-    </nav>
-    <div class="quick-links-header">
-      <a href="index.html">Home</a>
-      <a href="aboutme.html">About Me</a>
-      <a href="python.html">Python</a>
-      <a href="sql.html">SQL</a>
-      <a href="r.html">R</a>
-      <a href="tableau.html">Tableau</a>
-      <a href="powerbi.html">Power BI</a>
-      <a href="excel.html">Excel</a>
-      <a href="contact.html">Contact</a>
+    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+      <a href="index.html" class="logo"><strong>Data Analyst Portfolio</strong> <span>by Joshua Wilson</span></a>
+      <div class="quick-links-bar">
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="python.html">Python</a>
+        <a href="sql.html">SQL</a>
+        <a href="r.html">R</a>
+        <a href="tableau.html">Tableau</a>
+        <a href="powerbi.html">Power BI</a>
+        <a href="excel.html">Excel</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <nav><a href="#menu">Menu</a></nav>
     </div>
   </header>
 
