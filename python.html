@@ -1,14 +1,13 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Python Project – Joshua Wilson</title>
+  <title>Python Projects – Joshua Wilson</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 <body class="is-preload">
-
   <!-- Wrapper -->
   <div id="wrapper">
 
@@ -18,7 +17,7 @@
       <nav><a href="#menu">Menu</a></nav>
     </header>
 
-    <!-- Quick Links -->
+    <!-- Quick Links Bar -->
     <div style="background-color: #111; color: white; text-align: center; padding: 10px 0;">
       <a href="index.html" style="margin: 0 10px; color: white;">Home</a>
       <a href="aboutme.html" style="margin: 0 10px; color: white;">About Me</a>
@@ -56,45 +55,20 @@
       <section id="one">
         <div class="inner">
           <header class="major">
-            <h1>Python Project – Sales Analysis</h1>
+            <h1>Python Sales Analysis Project</h1>
           </header>
 
-          <p>This Python project uses data wrangling and exploratory data analysis to gain insight into sales data from the Australian Apparel retail sector during Q4 2020. The analysis leverages pandas, seaborn, and matplotlib for a full pipeline of data cleaning, visualization, and aggregation.</p>
+          <p>This project involves a detailed time-series analysis of apparel sales in Australia for Q4 2020. Sales data has been resampled and visualized using Python libraries.</p>
 
-          <h3>🔹 Key Skills</h3>
-          <ul>
-            <li>Data Cleaning with Pandas</li>
-            <li>Statistical Summary & Skewness Analysis</li>
-            <li>Min-Max Normalisation</li>
-            <li>Time Series Resampling (Weekly, Monthly, Quarterly)</li>
-            <li>Visualisation with Seaborn</li>
-            <li>Insights through Grouped Aggregates</li>
-          </ul>
-
-          <h3>🔹 Dataset Overview</h3>
-          <ul>
-            <li>Rows: 7,560</li>
-            <li>Features: Date, Time, State, Group (demographic), Units Sold, Sales Revenue</li>
-            <li>Period: October–December 2020</li>
-            <li>No missing or duplicate entries</li>
-          </ul>
-
-          <h3>📊 Analytical Highlights</h3>
-          <ul>
-            <li>Victoria (VIC) had the highest sales; WA and NT the lowest.</li>
-            <li>Men generated the most revenue; Seniors the least.</li>
-            <li>Sales peaked in the mornings and in the month of December.</li>
-            <li>Sales were right-skewed; normalized using MinMaxScaler.</li>
-            <li>Quarterly sales: 1,920.65 (normalized), driven by holiday season demand.</li>
-          </ul>
-
-          <h3>📈 Sample Visuals</h3>
-          <p>Include boxplots, bar charts, and time series trends to illustrate demographic patterns and seasonal effects.</p>
-          <span class="image main"><img src="assets/Python/Sales_by_Group_and_State.png" alt="Grouped Sales" /></span>
-          <span class="image main"><img src="assets/Python/Weekly_Sales_Trend.png" alt="Weekly Sales" /></span>
-
-          <p style="margin-top: 2em;">
-            <a href="https://github.com/Joshua-Wilson-Portfolio" class="button primary" target="_blank">View Full Code on GitHub</a>
+          <!-- Weekly Sales Line Chart -->
+          <header class="major">
+            <h2>Weekly Sales Trend</h2>
+          </header>
+          <span class="image main">
+            <img src="assets/Python/weekly_sales_trend.png" alt="Weekly Sales Line Chart" />
+          </span>
+          <p>
+            The line chart shows weekly sales performance, with clear growth leading into December followed by a sharp post-holiday decline. This helps identify seasonal trends and business cycle patterns.
           </p>
         </div>
       </section>
@@ -136,6 +110,5 @@
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
-
 </body>
 </html>
