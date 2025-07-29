@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Python Projects – Joshua Wilson</title>
+  <title>Python Project – Joshua Wilson</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
@@ -9,16 +9,16 @@
 </head>
 <body class="is-preload">
 
-<!-- Wrapper -->
-<div id="wrapper">
+  <!-- Wrapper -->
+  <div id="wrapper">
 
-  <!-- Header -->
-  <header id="header" class="alt style2">
-    <a href="index.html" class="logo"><strong>Data Analyst Portfolio</strong> <span>by Joshua Wilson</span></a>
-    <nav><a href="#menu">Menu</a></nav>
-  </header>
+    <!-- Header -->
+    <header id="header" class="alt style2">
+      <a href="index.html" class="logo"><strong>Data Analyst Portfolio</strong> <span>by Joshua Wilson</span></a>
+      <nav><a href="#menu">Menu</a></nav>
+    </header>
 
-  <!-- Quick Links Bar -->
+    <!-- Quick Links -->
     <div style="background-color: #111; color: white; text-align: center; padding: 10px 0;">
       <a href="index.html" style="margin: 0 10px; color: white;">Home</a>
       <a href="aboutme.html" style="margin: 0 10px; color: white;">About Me</a>
@@ -31,96 +31,111 @@
       <a href="contact.html" style="margin: 0 10px; color: white;">Contact</a>
     </div>
 
-  <!-- Menu -->
-  <nav id="menu">
-    <ul class="links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="aboutme.html">About Me</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <div class="dropup">
-        <button class="dropbtn">Portfolio Projects</button>
-        <div class="dropup-content">
-          <a href="python.html">Python</a>
-          <a href="sql.html">SQL</a>
-          <a href="r.html">R</a>
-          <a href="tableau.html">Tableau</a>
-          <a href="powerbi.html">Power BI</a>
-          <a href="excel.html">Excel</a>
+    <!-- Menu -->
+    <nav id="menu">
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <div class="dropup">
+          <button class="dropbtn">Portfolio Projects</button>
+          <div class="dropup-content">
+            <a href="python.html">Python</a>
+            <a href="sql.html">SQL</a>
+            <a href="r.html">R</a>
+            <a href="tableau.html">Tableau</a>
+            <a href="powerbi.html">Power BI</a>
+            <a href="excel.html">Excel</a>
+          </div>
         </div>
-      </div>
-    </ul>
-  </nav>
+      </ul>
+    </nav>
 
-  <!-- Main -->
-  <div id="main" class="alt">
-    <section id="one">
+    <!-- Main -->
+    <div id="main" class="alt">
+      <section id="one">
+        <div class="inner">
+          <header class="major">
+            <h1>Python Project – Sales Analysis</h1>
+          </header>
+
+          <p>This Python project uses data wrangling and exploratory data analysis to gain insight into sales data from the Australian Apparel retail sector during Q4 2020. The analysis leverages pandas, seaborn, and matplotlib for a full pipeline of data cleaning, visualization, and aggregation.</p>
+
+          <h3>🔹 Key Skills</h3>
+          <ul>
+            <li>Data Cleaning with Pandas</li>
+            <li>Statistical Summary & Skewness Analysis</li>
+            <li>Min-Max Normalisation</li>
+            <li>Time Series Resampling (Weekly, Monthly, Quarterly)</li>
+            <li>Visualisation with Seaborn</li>
+            <li>Insights through Grouped Aggregates</li>
+          </ul>
+
+          <h3>🔹 Dataset Overview</h3>
+          <ul>
+            <li>Rows: 7,560</li>
+            <li>Features: Date, Time, State, Group (demographic), Units Sold, Sales Revenue</li>
+            <li>Period: October–December 2020</li>
+            <li>No missing or duplicate entries</li>
+          </ul>
+
+          <h3>📊 Analytical Highlights</h3>
+          <ul>
+            <li>Victoria (VIC) had the highest sales; WA and NT the lowest.</li>
+            <li>Men generated the most revenue; Seniors the least.</li>
+            <li>Sales peaked in the mornings and in the month of December.</li>
+            <li>Sales were right-skewed; normalized using MinMaxScaler.</li>
+            <li>Quarterly sales: 1,920.65 (normalized), driven by holiday season demand.</li>
+          </ul>
+
+          <h3>📈 Sample Visuals</h3>
+          <p>Include boxplots, bar charts, and time series trends to illustrate demographic patterns and seasonal effects.</p>
+          <span class="image main"><img src="assets/Python/Sales_by_Group_and_State.png" alt="Grouped Sales" /></span>
+          <span class="image main"><img src="assets/Python/Weekly_Sales_Trend.png" alt="Weekly Sales" /></span>
+
+          <p style="margin-top: 2em;">
+            <a href="https://github.com/Joshua-Wilson-Portfolio" class="button primary" target="_blank">View Full Code on GitHub</a>
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
       <div class="inner">
-        <header class="major">
-          <h1>Python Projects</h1>
-        </header>
-        <p>This section features a Python-powered sales analysis project. I used pandas, matplotlib, and seaborn to explore and visualize KPIs like total revenue, average deal size, and top-performing products. </p>
-        <ul>
-          <li> Data cleaning and manipulation using pandas</li>
-          <li> Exploratory analysis with seaborn and matplotlib</li>
-          <li> Grouping and aggregating data for insights</li>
-          <li> Real-world dataset simulating quarterly sales</li>
+        <div style="text-align: center; margin-bottom: 1em;">
+          <a href="index.html" style="margin: 0 10px;">Home</a>
+          <a href="aboutme.html" style="margin: 0 10px;">About Me</a>
+          <a href="python.html" style="margin: 0 10px;">Python</a>
+          <a href="sql.html" style="margin: 0 10px;">SQL</a>
+          <a href="r.html" style="margin: 0 10px;">R</a>
+          <a href="tableau.html" style="margin: 0 10px;">Tableau</a>
+          <a href="powerbi.html" style="margin: 0 10px;">Power BI</a>
+          <a href="excel.html" style="margin: 0 10px;">Excel</a>
+          <a href="contact.html" style="margin: 0 10px;">Contact</a>
+        </div>
+        <ul class="icons">
+          <li><a href="mailto:joshuawilson2025@hotmail.com" target="_blank" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+          <li><a href="https://github.com/Joshua-Wilson-Portfolio" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+          <li><a href="https://www.linkedin.com/in/joshua-wilson-data-analysis/" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
         </ul>
-        <p>
-          <a href="https://github.com/Joshua-Wilson-Portfolio" class="button primary" target="_blank">View on GitHub</a>
-        </p>
+        <ul class="copyright">
+          <li>&copy; Joshua Wilson</li>
+          <li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
+        </ul>
       </div>
-    </section>
+    </footer>
+
   </div>
 
-  <!-- Footer -->
-  <footer id="footer">
-    <section class="split">
-      <section>
-        <div class="contact-method">
-          <span class="icon solid alt fa-envelope"></span>
-          <h3>Email</h3>
-          <a href="mailto:joshuawilson2025@hotmail.com">joshuawilson2025@hotmail.com</a>
-        </div>
-      </section>
-      <section>
-        <div class="contact-method">
-          <span class="icon brands alt fa-github"></span>
-          <h3>GitHub</h3>
-          <a href="https://github.com/Joshua-Wilson-Portfolio" target="_blank">Joshua-Wilson-Portfolio</a>
-        </div>
-      </section>
-      <section>
-        <div class="contact-method">
-          <span class="icon brands alt fa-linkedin-in"></span>
-          <h3>LinkedIn</h3>
-          <a href="https://www.linkedin.com/in/joshua-wilson" target="_blank">Joshua Wilson</a>
-        </div>
-      </section>
-    </section>
-
-    <section style="text-align:center; padding: 20px 0;">
-      <a href="index.html" style="margin: 0 10px;">Home</a>
-      <a href="aboutme.html" style="margin: 0 10px;">About Me</a>
-      <a href="python.html" style="margin: 0 10px;">Python</a>
-      <a href="sql.html" style="margin: 0 10px;">SQL</a>
-      <a href="r.html" style="margin: 0 10px;">R</a>
-      <a href="tableau.html" style="margin: 0 10px;">Tableau</a>
-      <a href="powerbi.html" style="margin: 0 10px;">Power BI</a>
-      <a href="excel.html" style="margin: 0 10px;">Excel</a>
-      <a href="contact.html" style="margin: 0 10px;">Contact</a>
-    </section>
-  </footer>
-
-</div>
-
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
 
 </body>
 </html>
