@@ -74,46 +74,65 @@
         <p>This Python project analyzes quarterly apparel sales across Australian states. It aims to extract actionable insights through wrangling, summarization, and visualization techniques.</p>
       </section>
 
-      <section class="timeline-section">
-        <h2>Data Wrangling</h2>
-        <p>Initial exploration involved checking for missing values, duplicates, and inspecting datatypes.</p>
-        <img src="assets/images/nulls_check.png" alt="Missing Values Screenshot">
-        <img src="assets/images/duplicates_check.png" alt="Duplicates Check Screenshot">
-      </section>
+      <section id="one">
+  <div class="inner">
+    <header class="major">
+      <h1>Sales Analysis – Python Project</h1>
+    </header>
 
-      <section class="timeline-section">
-        <h2>Data Cleaning</h2>
-        <p>The 'Date' column was converted to datetime format, and the 'Sales' column was normalized using MinMaxScaler.</p>
-        <img src="assets/images/date_cleaning.png" alt="Date Cleaning Screenshot">
-        <img src="assets/images/sales_normalised.png" alt="Normalized Sales Screenshot">
-      </section>
+    <p>This project explores apparel sales data in Australia during Q4 2020. Below is a step-by-step breakdown of the workflow including data cleaning, exploration, and insights using Python.</p>
 
-      <section class="timeline-section">
-        <h2>Exploratory Analysis</h2>
-        <p>Summaries by state, demographic group, and time of day helped identify performance differences and trends.</p>
-        <img src="assets/images/sales_by_state_table.png" alt="Sales by State Table">
-        <img src="assets/images/sales_by_group_table.png" alt="Sales by Group Table">
-      </section>
+    <h2>1. Load Dataset</h2>
+    <p>The dataset is loaded using <code>pd.read_csv()</code>.</p>
+    <span class="image main"><img src="assets/images/python/load-dataset.png" alt="Load Dataset"></span>
 
-      <section class="timeline-section">
-        <h2>Visual Insights</h2>
-        <p>The following chart shows weekly sales trends during the fourth quarter of 2020.</p>
-        <img src="assets/images/weekly_sales_trend.png" alt="Weekly Sales Line Chart">
-      </section>
+    <h2>2. Preview Data</h2>
+    <p>Using <code>df.head()</code> and <code>df.tail()</code> to view the first and last few rows.</p>
+    <span class="image main"><img src="assets/images/python/data-preview.png" alt="Data Preview"></span>
 
-      <section class="timeline-section">
-        <h2>Key Takeaways</h2>
-        <ul>
-          <li>Victoria generated the highest revenue among all states.</li>
-          <li>Morning sales outperformed other time periods.</li>
-          <li>There were no missing or duplicate entries, and the data was well-structured.</li>
-        </ul>
-      </section>
+    <h2>3. DataFrame Info</h2>
+    <p>Checking structure, memory usage, and null values.</p>
+    <span class="image main"><img src="assets/images/python/data-frame-structure.png" alt="DataFrame Info"></span>
 
-      <section class="timeline-section">
-        <h2>View Full Project</h2>
-        <p><a href="https://github.com/Joshua-Wilson-Portfolio" target="_blank">View the full notebook on GitHub</a></p>
-      </section>
+    <h2>4. Data Types</h2>
+    <p>Inspecting data types to determine what preprocessing is required.</p>
+    <span class="image main"><img src="assets/images/python/data-types.png" alt="Data Types"></span>
+
+    <h2>5. Null Values Check</h2>
+    <p>Ensuring no missing values are present using <code>df.isnull().sum()</code>.</p>
+    <span class="image main"><img src="assets/images/python/nulls_check.png" alt="Null Check"></span>
+
+    <h2>6. Duplicates Check</h2>
+    <p>Checking for and dropping duplicate records using <code>df.duplicated()</code> and <code>drop_duplicates()</code>.</p>
+    <span class="image main"><img src="assets/images/python/duplicates_check-and drop.png" alt="Duplicates Check"></span>
+
+    <h2>7. Convert Date Column</h2>
+    <p>Converted the <code>Date</code> column to datetime using <code>pd.to_datetime()</code>.</p>
+    <span class="image main"><img src="assets/images/python/covert-data-to-datetime.png" alt="Convert Date Format"></span>
+
+    <h2>8. Boxplot of Sales</h2>
+    <p>Visualizing distribution and identifying outliers in sales.</p>
+    <span class="image main"><img src="assets/images/python/boxplot_sales_original.png" alt="Boxplot of Sales"></span>
+
+    <h2>9. Summary Statistics</h2>
+    <p>Basic statistical measures such as mean, median, and standard deviation.</p>
+    <span class="image main"><img src="assets/images/python/summary-statistics.png" alt="Summary Statistics"></span>
+
+    <h2>10. Weekly Sales Trend</h2>
+    <p>Visualizing sales performance over time using line charts.</p>
+    <span class="image main"><img src="assets/images/python/weekly_sales_trend.png" alt="Weekly Sales Trend"></span>
+
+    <h2>11. Sales by State and Group</h2>
+    <p>Segmenting total sales by state and age demographic groups.</p>
+    <span class="image main"><img src="assets/images/python/sales_by_state_group.png" alt="Sales by State and Group"></span>
+
+    <h2>12. Group-wise Sales by State</h2>
+    <p>Evaluating sales contributions from each demographic across states.</p>
+    <span class="image main"><img src="assets/images/python/Group-wise-sales.png" alt="Group-wise Sales"></span>
+
+  </div>
+</section>
+
     </div>
 
     <!-- Footer -->
